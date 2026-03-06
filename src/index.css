@@ -1,0 +1,771 @@
+/* ================================
+   Global Styles
+================================ */
+
+:root{
+  --dark:#05070d;
+  --dark2:#0c101c;
+  --blue:#0d6efd;
+  --blue-light:#4d9fff;
+  --border:rgba(255,255,255,0.08);
+  --transition:all .35s ease;
+}
+
+body{
+  background: var(--dark2);
+  color:white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================================
+   Section
+================================ */
+
+.pf-section{
+  padding:70px 0;
+}
+
+.pf-title{
+  font-weight:800;
+  font-size:2.2rem;
+  text-align:center;
+}
+
+.pf-subtitle{
+  text-align:center;
+  color:#cfcfcf;
+  margin-bottom:40px;
+}
+
+/* ================================
+   Card Layout
+================================ */
+
+.pf-card{
+  background:linear-gradient(160deg,#0c1325,#070b16);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px;
+  text-align:center;
+  transition:var(--transition);
+  position:relative;
+  overflow:hidden;
+}
+
+.pf-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:14px;
+  padding:1px;
+  background:linear-gradient(120deg,transparent,var(--blue),transparent);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:0;
+  transition:var(--transition);
+}
+
+.pf-card:hover::before{
+  opacity:1;
+}
+
+.pf-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(13,110,253,0.45);
+  box-shadow:0 15px 45px rgba(0,0,0,0.55);
+}
+
+/* ================================
+   Card Image
+================================ */
+
+.pf-card img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:12px;
+  border:2px solid rgba(13,110,253,0.4);
+}
+
+/* ================================
+   Title
+================================ */
+
+.pf-card h5{
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+/* ================================
+   Description
+================================ */
+
+.pf-desc{
+  font-size:14px;
+  color:goldenrod;
+  margin-bottom:6px;
+}
+
+/* ================================
+   Category
+================================ */
+
+.pf-category{
+  font-size:14px;
+  color:goldenrod;
+}
+
+.pf-category span{
+  color:white;
+}
+
+/* ================================
+   Button
+================================ */
+
+.pf-btn{
+  width:100%;
+  padding:10px;
+  border:none;
+  background:var(--blue);
+  color:white;
+  font-weight:600;
+  border-radius:0 0 12px 12px;
+  transition:var(--transition);
+}
+
+.pf-btn:hover{
+  background:#0b5ed7;
+}
+
+/* ================================
+   Skills Section
+================================ */
+
+.pf-skill-card{
+  background:linear-gradient(160deg,#0c1325,#070b16);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  text-align:center;
+  transition:var(--transition);
+  position:relative;
+}
+
+.pf-skill-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:14px;
+  padding:1px;
+  background:linear-gradient(120deg,transparent,var(--blue),transparent);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:0;
+  transition:var(--transition);
+}
+
+.pf-skill-card:hover{
+  border-color:rgba(13,110,253,0.55);
+  transform:translateY(-7px);
+  box-shadow:0 18px 45px rgba(0,0,0,0.55);
+}
+
+.pf-skill-card:hover::before{
+  opacity:1;
+}
+
+/* Skill icon */
+
+.pf-skill-icon{
+  font-size:2rem;
+  margin-bottom:8px;
+  color:var(--blue-light);
+}
+
+/* Skill title */
+
+.pf-skill-title{
+  font-size:1rem;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+/* Skill badge */
+
+.pf-skill-badge{
+  display:inline-block;
+  padding:4px 10px;
+  border-radius:14px;
+  font-size:12px;
+  border:1px solid rgba(13,110,253,0.35);
+  color:var(--blue-light);
+  background:rgba(13,110,253,0.15);
+  transition:var(--transition);
+}
+
+.pf-skill-card:hover .pf-skill-badge{
+  background:rgba(13,110,253,0.3);
+  color:white;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media(max-width:992px){
+
+  .pf-title{
+    font-size:1.9rem;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .pf-card img{
+    width:65px;
+    height:65px;
+  }
+
+  .pf-title{
+    font-size:1.6rem;
+  }
+
+}
+
+@media(max-width:576px){
+
+  .pf-section{
+    padding:50px 0;
+  }
+
+  .pf-title{
+    font-size:1.4rem;
+  }
+
+}
+/* ================================
+PROJECT CARD
+================================ */
+
+.pf-project-card{
+background: #0f172a;
+border: 2px solid rgba(255,255,255,0.08);
+transition: 0.4s;
+overflow: hidden;
+position: relative;
+
+}
+
+.pf-project-card:hover{
+transform: translateY(-8px);
+box-shadow: 0 15px 40px rgba(blue);
+border-color: rgba(59,130,246,0.5);
+}
+
+
+/* ================================
+IMAGE WRAPPER
+================================ */
+
+.pf-img-wrap{
+position: relative;
+overflow: hidden;
+height: 220px;   /* FIXED IMAGE HEIGHT */
+}
+
+.pf-img-wrap img{
+width: 100%;
+height: 100%;
+object-fit: cover;   /* image crop but proper */
+transition: 0.5s;
+}
+
+.pf-project-card:hover img{
+transform: scale(1.08);
+}
+
+
+/* ================================
+IMAGE OVERLAY
+================================ */
+
+.pf-img-overlay{
+position: absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background: rgba(0,0,0,0.65);
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+opacity:0;
+transition:0.4s;
+}
+
+.pf-project-card:hover .pf-img-overlay{
+opacity:1;
+}
+
+
+/* ================================
+OVERLAY BUTTON
+================================ */
+
+.pf-overlay-btn{
+text-decoration:none;
+background:#0d6efd;
+color:white;
+padding:8px 14px;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+.pf-overlay-btn:hover{
+background:#0b5ed7;
+color:white;
+}
+
+.pf-overlay-btn.ghost{
+background:transparent;
+border:1px solid #0d6efd;
+color:#0d6efd;
+}
+
+.pf-overlay-btn.ghost:hover{
+background:#0d6efd;
+color:white;
+}
+
+
+/* ================================
+BUTTON HOVER
+================================ */
+
+.pf-btn-hover{
+transition:0.3s;
+}
+
+.pf-btn-hover:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 20px rgba(13,110,253,0.5);
+}
+
+.pf-btn-ghost-hover{
+transition:0.3s;
+}
+
+.pf-btn-ghost-hover:hover{
+background:#0d6efd !important;
+color:white !important;
+}
+
+
+/* ================================
+CARD TEXT
+================================ */
+
+.pf-project-card p{
+line-height:1.4;
+}
+
+
+/* ================================
+RESPONSIVE
+================================ */
+
+@media(max-width:992px){
+
+.pf-img-wrap{
+height:200px;
+}
+
+}
+
+@media(max-width:768px){
+
+.pf-img-wrap{
+height:180px;
+}
+
+}
+
+@media(max-width:576px){
+
+.pf-img-wrap{
+height:170px;
+}
+
+}
+
+/* skill css  */
+/* ===============================
+   GLOBAL COLORS
+================================ */
+:root{
+  --bg-dark:#0f172a;
+  --card-bg:#111827;
+  --primary:#3b82f6;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --border:#1f2937;
+}
+
+/* ===============================
+   PAGE
+================================ */
+.pf-page{
+  min-height:100vh;
+  background:linear-gradient(135deg,#020617,#0f172a,#020617);
+  padding:60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.pf-section-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.pf-section-title{
+  font-size:40px;
+  font-weight:700;
+  color:white;
+}
+
+.pf-section-title span{
+  color:var(--primary);
+}
+
+.pf-section-sub{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+.pf-title-line{
+  width:80px;
+  height:4px;
+  background:var(--primary);
+  margin:15px auto;
+  border-radius:10px;
+}
+
+/* ===============================
+   GRID
+================================ */
+
+.pf-grid{
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ===============================
+   CARD
+================================ */
+
+.pf-skill-card{
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px 20px;
+  text-align:center;
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.pf-skill-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+  border-color:var(--primary);
+}
+
+/* ===============================
+   IMAGE
+================================ */
+
+.pf-skill-img-wrap{
+  position:relative;
+  width:90px;
+  height:90px;
+  margin:auto;
+  margin-bottom:15px;
+}
+
+.pf-skill-img-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  border:2px solid var(--primary);
+  background:white;
+  padding:10px;
+  transition:0.4s;
+}
+
+.pf-skill-card:hover img{
+  transform:scale(1.1);
+}
+
+
+/* ===============================
+   TEXT
+================================ */
+
+.pf-skill-name{
+  color:white;
+  font-weight:600;
+  margin-top:10px;
+}
+
+/* category badge */
+
+.pf-skill-category{
+  display:inline-block;
+  padding:5px 14px;
+  border-radius:20px;
+  font-size:12px;
+  margin-top:6px;
+  border:1px solid;
+}
+
+/* level badge */
+
+.pf-skill-badge{
+  margin-top:12px;
+  display:inline-block;
+  background:var(--primary);
+  color:white;
+  font-size:13px;
+  padding:6px 14px;
+  border-radius:20px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width:768px){
+
+.pf-section-title{
+  font-size:30px;
+}
+
+.pf-skill-card{
+  padding:25px 15px;
+}
+
+}
+
+@media (max-width:500px){
+
+.pf-skill-img-wrap{
+  width:70px;
+  height:70px;
+}
+}
+
+/* services css  */
+
+/* page background */
+
+.services-page{
+background:linear-gradient(135deg ,#0f172a,#020617);
+min-height:100vh;
+padding-bottom:80px;
+}
+
+
+/* card design */
+
+.service-card{
+background:linear-gradient(145deg,#0f172a,#020617);
+border:1px solid #1e293b;
+transition:all 0.4s ease;
+overflow:hidden;
+position:relative;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+
+/* hover effect */
+
+.service-card:hover{
+transform:translateY(-12px) scale(1.02);
+border-color:#3b82f6;
+box-shadow:0 20px 40px rgba(0,0,0,0.8);
+}
+
+
+/* image */
+
+.service-img{
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:50%;
+padding:10px;
+background:#020617;
+border:3px solid #3b82f6;
+transition:all 0.4s ease;
+margin-bottom:15px;
+}
+
+
+/* image hover */
+
+.service-card:hover .service-img{
+transform:scale(1.15) rotate(5deg);
+box-shadow:0 0 20px #3b82f6;
+}
+
+
+/* title */
+
+.card-title{
+font-weight:700;
+font-size:18px;
+margin-top:10px;
+color:#e2e8f0;
+}
+
+
+/* description */
+
+.service-text{
+color:#fbbf24;
+font-size:14px;
+line-height:1.6;
+}
+
+
+/* category */
+
+.service-category{
+font-size:14px;
+color:#fbbf24;
+}
+
+.service-category span{
+color:#e2e8f0;
+font-weight:600;
+}
+
+
+/* button */
+
+.service-btn{
+width:100%;
+padding:12px;
+border:none;
+background:linear-gradient(90deg,#2563eb,#3b82f6);
+color:white;
+font-weight:600;
+letter-spacing:0.5px;
+transition:all 0.3s ease;
+border-radius:0 0 15px 15px;
+}
+
+
+/* button hover */
+
+.service-btn:hover{
+background:linear-gradient(90deg,#1d4ed8,#2563eb);
+transform:scale(1.05);
+}
+
+
+/* card glow line */
+
+.service-card::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:3px;
+background:linear-gradient(90deg,transparent,#3b82f6,transparent);
+transition:0.5s;
+}
+
+.service-card:hover::before{
+left:100%;
+}
+
+
+/* responsive */
+
+@media(max-width:768px){
+
+.service-img{
+width:70px;
+height:70px;
+}
+
+.card-title{
+font-size:16px;
+}
+
+.service-text{
+font-size:13px;
+}
+
+}
+
+/* contact css */
+.pf-avatar-img{
+  width:90px;
+  height:90px;
+  border:2px solid white;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.pf-avatar-wrap{
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.pf-avatar-img:hover{
+  transform: scale(1.3);
+}
+
+/* home css  */
+/* Image container */
+
+.pf-profile-wrap{
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+/* Profile image */
+
+.pf-profile-img{
+  width:300px;
+  height:300px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* hover zoom effect */
+
+.pf-profile-wrap:hover .pf-profile-img{
+  transform: scale(1.3);
+}
+
+.btp{
+  background-color: rgb(16, 90, 239);
+}
