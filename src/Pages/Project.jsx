@@ -134,55 +134,78 @@
 // export default Project
 
 import React from "react";
-import img1 from "../assets/Images/SonoRestourant.jpeg";
-import img2 from "../assets/Images/portfolio.jpeg";
-import img3 from "../assets/Images/form.jpeg";
-import img4 from "../assets/Images/card.jpeg";
-import img5 from "../assets/Images/weatherApp.jpeg";
-import img6 from "../assets/Images/TodoApp.jpeg";
-import img7 from "../assets/Images/QuizApp.jpeg";
+import img1 from "../assets/image/robotics.jpeg";
+import img2 from "../assets/Image/Bank-ledger.jpeg";
+import img3 from "../assets/Image/GRS images.jpeg";
+import img4 from "../assets/Images/SonoRestourant.jpeg";
+import img5 from "../assets/Images/portfolio.jpeg";
+import img6 from "../assets/Images/form.jpeg";
+import img7 from "../assets/Images/card.jpeg";
+import img8 from "../assets/Images/weatherApp.jpeg";
+import img9 from "../assets/Images/TodoApp.jpeg";
+import img10 from "../assets/Images/QuizApp.jpeg";
 import { Link } from "react-router-dom";
 
 const projects = [
   {
     img: img1,
+    title: "Softpro Innovation – E-commerce Platform (Electric Products)",
+    desc: "Developed a full-featured e-commerce web application for selling electrical products such as fans, lights, cables, and home appliances. The platform provides a seamless shopping experience with user authentication and admin management.",
+    tech: "MongoDB, Express.js, React.js, Node.js, Bootstrap, HTML, CSS, Javascript",
+    Role: "Backend & Full Stack Developer"
+  },
+    {
+    img: img2,
+    title: "Bank-Ledger – Transaction & Payment System",
+    desc: "Built a banking transaction system to manage user accounts, deposits, withdrawals, and transaction history with ledger tracking.",
+    tech: "MongoDB, Express.js, React.js, Node.js, Mongoose,HTML, CSS, Javascript",
+    Role: "Backend & Full Stack Developer"
+
+  },  {
+    img: img3,
+    title: "GRS Complaint System – College Complaint Portal",
+    desc: "Designed and developed an online grievance redressal system for college students to submit and track complaints digitally.",
+    tech: "MongoDB, Express.js, React.js, Node.js, Mongoose,HTML, CSS, Javascript",
+    Role: "Backend & Full Stack Developer"
+  },  {
+    img: img4,
     title: "Sono Restaurant",
     desc: "This restaurant website is built using React.js with a clean and responsive design.",
     tech: "React, Bootstrap, HTML, CSS, Javascript",
   },
     {
-    img: img2,
+    img: img5,
     title: "Portfolio",
     desc: "This My Personal Portfolio website is built using React.js with a clean and responsive design.",
     tech: "React, Bootstrap, HTML, CSS, Javascript",
   },
    {
-    img: img3,
+    img: img6,
     title: "Form Handler",
     desc: "A form handling project built using React.js with proper state management.",
     tech: "React, Bootstrap, HTML, CSS, Javascript",
   },
   {
-    img: img4,
+    img: img7,
     title: "Card Component",
     desc: "A card component built using React.js with a clean and reusable design.",
     tech: "React, Bootstrap, HTML, CSS, Javascript",
   },
  
   {
-    img: img5,
+    img: img8,
     title: "Weather App",
     desc: "A weather application built using HTML, CSS, Bootstrap, and JavaScript.",
     tech: "Javascript, HTML, CSS, Bootstrap",
   },
   {
-    img: img6,
+    img: img9,
     title: "TO-DO App",
     desc: "A simple To-Do application to manage daily tasks efficiently.",
     tech: "Javascript, HTML, CSS, Bootstrap",
   },
   {
-    img: img7,
+    img: img10,
     title: "Quiz App",
     desc: "A quiz application with an interactive user interface.",
     tech: "Javascript, HTML, CSS, Bootstrap",
