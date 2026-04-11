@@ -135,8 +135,8 @@
 
 import React from "react";
 import img1 from "../assets/image/robotics.jpeg";
-import img2 from "../assets/Image/Bank-ledger.jpeg";
-import img3 from "../assets/Image/GRS images.jpeg";
+import img2 from "../assets/image/Bank-ledger.jpeg";
+import img3 from "../assets/image/GRS images.jpeg";
 import img4 from "../assets/Images/SonoRestourant.jpeg";
 import img5 from "../assets/Images/portfolio.jpeg";
 import img6 from "../assets/Images/form.jpeg";
