@@ -48,7 +48,7 @@ const projects = [
     title: "Portfolio",
     desc: "This My Personal Portfolio website is built using React.js with a clean and responsive design.",
     tech: "React, Bootstrap, HTML, CSS, Javascript",
-    link: "#",
+    link: "https://my-personal-portfolio-sigma-neon.vercel.app/",
   },
   {
     img: img6,
