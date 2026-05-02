@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../assets/images/textTovoice.jpeg";
-import img2 from "../assets/images/voicetotext1.jpeg";
-import img3 from "../assets/images/slider.jpeg";
-import img4 from "../assets/images/musicplayer.jpeg";
+import img1 from "../assets/Images/textTovoice.jpeg";
+import img2 from "../assets/Images/voicetotext1.jpeg";
+import img3 from "../assets/Images/slider.jpeg";
+import img4 from "../assets/Images/musicplayer.jpeg";
 import { Link } from "react-router-dom";
 import "../index.css";
 

@@ -1,14 +1,14 @@
 import React from "react";
-import img1 from "../assets/images/roboelectric.jpeg";
-import img2 from "../assets/images/Bank-ledger.jpeg";
-import img3 from "../assets/images/grs.jpeg";
-import img4 from "../assets/images/SonoRestourant.jpeg";
-import img5 from "../assets/images/portfolio.jpeg";
-import img6 from "../assets/images/form.jpeg";
-import img7 from "../assets/images/card.jpeg";
-import img8 from "../assets/images/weatherApp.jpeg";
-import img9 from "../assets/images/TodoApp.jpeg";
-import img10 from "../assets/images/QuizApp.jpeg";
+import img1 from "../assets/Images/roboelectric.jpeg";
+import img2 from "../assets/Images/Bank-ledger.jpeg";
+import img3 from "../assets/Images/grs.jpeg";
+import img4 from "../assets/Images/SonoRestourant.jpeg";
+import img5 from "../assets/Images/portfolio.jpeg";
+import img6 from "../assets/Images/form.jpeg";
+import img7 from "../assets/Images/card.jpeg";
+import img8 from "../assets/Images/weatherApp.jpeg";
+import img9 from "../assets/Images/TodoApp.jpeg";
+import img10 from "../assets/Images/QuizApp.jpeg";
 import { Link } from "react-router-dom";
 
 const projects = [
