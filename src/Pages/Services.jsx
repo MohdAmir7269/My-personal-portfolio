@@ -1,12 +1,12 @@
 import React from 'react'
 import '../index.css'
 
-import img1 from '../assets/image/react.png'
-import img2 from '../assets/image/apiDevelopment.jpg'
-import img3 from '../assets/image/Auth&Authorization.png'
-import img4 from '../assets/image/Develop$host.png'
-import img5 from '../assets/image/thirdparty.png'
-import img6 from '../assets/image/AdminDashbord.png'
+import img1 from '../assets/Images/react.png'
+import img2 from '../assets/images/apiDevelopment.jpg'
+import img3 from '../assets/images/Auth&Authorization.png'
+import img4 from '../assets/images/Develop$host.png'
+import img5 from '../assets/images/thirdparty.png'
+import img6 from '../assets/images/AdminDashbord.png'
 
 const Services = () => {
   return (
