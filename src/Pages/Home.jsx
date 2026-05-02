@@ -2,7 +2,7 @@
 
 import React from "react";
 import img from "../assets/Images/Myimg.jpeg";
-import resume from "../assets/Images/Mohammad_Amir_Resume.pdf"; // ✅ Proper Import
+import resume from "../assets/Images/Mohd_Amir_Resume.pdf"; // ✅ Proper Import
 import { Link } from "react-router-dom";
 import "../index.css";
 

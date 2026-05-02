@@ -1,14 +1,13 @@
-
 import React from 'react'
-import img1 from '../assets/image/apiDevelopment.jpg'
-import img2 from '../assets/image/github_PNG63.png'
-import img3 from '../assets/image/git-13.png'
-import img4 from '../assets/image/nodejs.png'
-import img5 from '../assets/image/Css3a.png'
-import img6 from '../assets/image/bootstrap.jpg'
-import img7 from '../assets/image/jst.png'
-import img8 from '../assets/image/react.png'
-import img9 from '../assets/image/mongodb-logo-petit.png'
+import img1 from '../assets/Image/apiDevelopment.jpg'
+import img2 from '../assets/Image/github_PNG63.png'
+import img3 from '../assets/Image/git-13.png'
+import img4 from '../assets/Image/nodejs.png'
+import img5 from '../assets/Image/Css3a.png'
+import img6 from '../assets/Image/bootstrap.jpg'
+import img7 from '../assets/Image/jst.png'
+import img8 from '../assets/Image/react.png'
+import img9 from '../assets/Image/mongodb-logo-petit.png'
 import '../index.css'
 
 const skills = [
