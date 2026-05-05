@@ -9,7 +9,7 @@ import "../index.css";
 const Home = () => {
   return (
     <div className="container-fluid bg-dark">
-      <div className="row p-3 ">
+      <div className="row px-3 pb-3 p-3 ">
         <div className="col-sm-12 bg-dark pb-0">
           <div className="row">
 
