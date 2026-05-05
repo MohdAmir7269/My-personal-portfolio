@@ -21,7 +21,7 @@ const Navbar = () => {
       <style>{`
         body {
           margin: 0;
-          padding-top: -px;
+          padding-top: 0px;
           background-color: #0a0a0a;
         }
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 10px 24px;
+          padding: 12px 12px; 
         }
 
         .brand-col {
