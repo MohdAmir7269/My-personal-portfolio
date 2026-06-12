@@ -4,11 +4,9 @@ import img2 from "../assets/Images/Bank-ledger.jpeg";
 import img3 from "../assets/Images/grs.jpeg";
 import img4 from "../assets/Images/SonoRestourant.jpeg";
 import img5 from "../assets/Images/portfolio.jpeg";
-import img6 from "../assets/Images/form.jpeg";
-import img7 from "../assets/Images/card.jpeg";
-import img8 from "../assets/Images/weatherApp.jpeg";
-import img9 from "../assets/Images/TodoApp.jpeg";
-import img10 from "../assets/Images/QuizApp.jpeg";
+import img6 from "../assets/Images/weatherApp.jpeg";
+import img7 from "../assets/Images/TodoApp.jpeg";
+import img8 from "../assets/Images/QuizApp.jpeg";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -24,9 +22,11 @@ const projects = [
     img: img2,
     title: "Bank-Ledger – Transaction & Payment System",
     desc: "Built a banking transaction system to manage user accounts, deposits, withdrawals, and transaction history with ledger tracking.",
-    tech: "MongoDB, Express.js, React.js, Node.js, Mongoose,HTML, CSS, Javascript",
+    tech: "MongoDB, Express.js, React.js, Node.js, Mongoose, HTML, CSS, Javascript",
     Role: "Backend & Full Stack Developer",
-    link: "https://bank-transaction-1p3kuxcu3-mohdamir7269s-projects.vercel.app",
+
+    frontend: "https://banktransaction-sjyr.vercel.app/",
+    backend: "https://banktransaction-2.onrender.com/",
   },
   {
     img: img3,
@@ -34,7 +34,7 @@ const projects = [
     desc: "Designed and developed an online grievance redressal system for college students to submit and track complaints digitally.",
     tech: "MongoDB, Express.js, React.js, Node.js, Mongoose,HTML, CSS, Javascript",
     Role: "Backend & Full Stack Developer",
-    frontend: "https://grs-71qn.vercel.app/",
+    frontend: "https://grivance-6x7y.vercel.app/",
   },
   {
     img: img4,
@@ -50,40 +50,27 @@ const projects = [
     tech: "React, Bootstrap, HTML, CSS, Javascript",
     link: "https://my-personal-portfolio-sigma-neon.vercel.app/",
   },
+
   {
     img: img6,
-    title: "Form Handler",
-    desc: "A form handling project built using React.js with proper state management.",
-    tech: "React, Bootstrap, HTML, CSS, Javascript",
-    link: "https://form-handeler.vercel.app/",
-  },
-  {
-    img: img7,
-    title: "Card Component",
-    desc: "A card component built using React.js with a clean and reusable design.",
-    tech: "React, Bootstrap, HTML, CSS, Javascript",
-    link: "https://card-xalw.vercel.app/",
-  },
-  {
-    img: img8,
     title: "Weather App",
     desc: "A weather application built using HTML, CSS, Bootstrap, and JavaScript.",
     tech: "Javascript, HTML, CSS, Bootstrap",
     link: "https://weatherapp-nine-roan.vercel.app/",
   },
   {
-    img: img9,
+    img: img7,
     title: "TO-DO App",
     desc: "A simple To-Do application to manage daily tasks efficiently.",
     tech: "Javascript, HTML, CSS, Bootstrap",
     link: "https://todo-app-d5md.vercel.app/",
   },
   {
-    img: img10,
+    img: img8,
     title: "Quiz App",
     desc: "A quiz application with an interactive user interface.",
     tech: "Javascript, HTML, CSS, Bootstrap",
-    link: "https://quiz-app-to5h.vercel.app/",
+    link: "https://quiz-app-to5h.vercel.app",
   },
 ];
 
@@ -170,7 +157,6 @@ const Project = () => {
       <div className="container-fluid">
         <div className="row" style={{ backgroundColor: "#0a0a0f" }}>
           <div className="col-sm-12">
-
             <h1 className="display-5 text-center mt-5 text-white fw-bold">
               My <span className="text-primary">Projects</span>
             </h1>
@@ -184,59 +170,32 @@ const Project = () => {
                 <div className="col" key={i}>
                   <div className="pf-project-card rounded-4 h-100">
                     <div className="pf-img-wrap">
+
+                      
                       <img src={p.img} alt={p.title} />
-                      <div className="pf-img-overlay">
-
-                        {/* ✅ Only View */}
-                        <a
-                          href={p.frontend || p.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="pf-overlay-btn"
-                        >
-                          View
-                        </a>
-
-                        <a
-                          href="https://github.com/MohdAmir7269"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="pf-overlay-btn ghost"
-                        >
-                          GitHub
-                        </a>
-                      </div>
+                           
                     </div>
+                    
+                    <a
+                      href={p.frontend || p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <button className="bg-primary text-white border-0 me-3 py-2 px-3 ms-3 rounded-2 pf-btn-hover">
+                        View Project
+                      </button>
+                    </a>
 
-                    <div className="p-3">
-                      <h5 className="text-white fw-bold">{p.title}</h5>
-                      <div className="border-bottom border-primary mb-2"></div>
-                      <p style={{ fontSize: "14px", color: "#8892a4" }}>{p.desc}</p>
-                      <p className="text-primary" style={{ fontSize: "13px" }}>{p.tech}</p>
-
-                      {/* ✅ Only View */}
-                      <a
-                        href={p.frontend || p.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ textDecoration: "none" }}
-                      >
-                        <button className="bg-primary text-white border-0 me-2 py-2 px-3 rounded-2 pf-btn-hover">
-                          View Project
-                        </button>
-                      </a>
-
-                      <a
-                        href="https://github.com/MohdAmir7269"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <button className="text-primary border border-primary rounded-2 py-2 px-3 pf-btn-ghost-hover bg-transparent">
-                          GitHub
-                        </button>
-                      </a>
-                    </div>
-
+                    <a
+                      href={p.github || "https://github.com/MohdAmir7269"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="text-primary border border-primary rounded-2 py-2 px-3 pf-btn-ghost-hover bg-transparent">
+                        GitHub
+                      </button>
+                    </a>
                   </div>
                 </div>
               ))}
@@ -244,14 +203,17 @@ const Project = () => {
 
             <div className="text-center py-5">
               <Link to="/project">
-                <button className="bg-primary text-white border-0 px-4 py-2 rounded">Pre</button>
+                <button className="bg-primary text-white border-0 px-4 py-2 rounded">
+                  Pre
+                </button>
               </Link>
               <span className="text-white mx-3">Page 1 of 2</span>
               <Link to="/project2">
-                <button className="bg-primary text-white border-0 px-4 py-2 rounded">Next</button>
+                <button className="bg-primary text-white border-0 px-4 py-2 rounded">
+                  Next
+                </button>
               </Link>
             </div>
-
           </div>
         </div>
       </div>
